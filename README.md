@@ -23,3 +23,10 @@ Bruh i was getting so pissed at the note script not being located by the imput m
 i tried also making a new script called Note but then it called it Note2 and that again made the public class Note2 and that didn't work so i just renamed the old script to NoteOLD and then realised my mistake with the new script bruhhhhhhhhhhhhhhhhhhh
 
 Ts pmo sm </3
+
+-----------------------------------------------------  
+
+# 15:53
+
+i am so done with ts.
+
