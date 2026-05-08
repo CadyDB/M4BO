@@ -8,14 +8,14 @@ public class chartreader : MonoBehaviour
 
     string[] chart =
     {
-        "0-0-",
-        "-0-0",
+        "0---",
+        "-0--",
         "--0-",
-        "00--",
-        "0-0-",
-        "00-0",
-        "--0-",
-        "0-00"
+        "-0--",
+        "0---",
+        "---0",
+        "----",
+        "---0"
     };
 
     public float beatTime = 0.5f;

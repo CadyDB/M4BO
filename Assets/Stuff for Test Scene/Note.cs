@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public class notes : MonoBehaviour
+public class Note : MonoBehaviour
 {
-    public float speed = 5f;
+    public float speed = 3f;
+    public int lane;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,5 +15,4 @@ public class notes : MonoBehaviour
     {
         transform.position += Vector3.down * speed * Time.deltaTime;
     }
-    
 }
