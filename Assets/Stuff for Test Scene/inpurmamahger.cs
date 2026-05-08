@@ -4,6 +4,7 @@ public class inpurmamahger : MonoBehaviour
 {
     float hitLineY = -3.72f;
 
+    public int health = 50;
     public float perfectRange = 0.3f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -71,6 +72,7 @@ public class inpurmamahger : MonoBehaviour
         if (yPos >= -5f && yPos <= -3f)
         {
             Debug.Log("hittttttt");
+            health += 5;
 
             Destroy(closestNote);
 
@@ -79,5 +81,6 @@ public class inpurmamahger : MonoBehaviour
     }
 
     Debug.Log("</3>");
+        health -= 5;
 }
 }
