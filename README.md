@@ -20,4 +20,6 @@ its not really done yet and i am just at the point where i know that i have impu
 
 Bruh i was getting so pissed at the note script not being located by the imput manager and turnes out i just had my note script without a capital letter so i changed it and it still did NOT work and i was getting so pissed and turns out i just frogot to change the public class from note to NOTE...
 
+i tried also making a new script called Note but then it called it Note2 and that again made the public class Note2 and that didn't work so i just renamed the old script to NoteOLD and then realised my mistake with the new script bruhhhhhhhhhhhhhhhhhhh
+
 Ts pmo sm </3
