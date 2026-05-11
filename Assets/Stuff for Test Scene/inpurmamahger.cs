@@ -53,14 +53,14 @@ public class inpurmamahger : MonoBehaviour
         {
             Note note = noteObj.GetComponent<Note>();
 
-            Debug.Log("note: " + note.name + " note.lane: " + note.lane + " ==? " + lane);
+            //Debug.Log("note: " + note.name + " note.lane: " + note.lane + " ==? " + lane);
             if (note.lane == lane)//per lane bewaren
             {
                 float distance = Mathf.Abs(
                     note.transform.position.y - hitLineY // 0 --4 = +4 // -3.99 +4 = 0.01
                 );
 
-                Debug.Log("note: " + note.name + " distance: " + distance);
+                //Debug.Log("note: " + note.name + " distance: " + distance);
                 if (distance < closestDistance)
                 {
                     closestDistance = distance;
@@ -71,12 +71,21 @@ public class inpurmamahger : MonoBehaviour
 
         if (closestNote != null)
         {
-            Debug.Log("closestNote: " + closestNote.name + " distance: " + closestDistance);
+            //Debug.Log("closestNote: " + closestNote.name + " distance: " + closestDistance);
             float yPos = closestNote.transform.position.y;
 
-            if (yPos >= -6f && yPos <= -2f)
+            if (yPos >= -4.5f && yPos <= -3.5f)
             {
-                Debug.Log("hittttttt");
+                Debug.Log("HIT PERFECT");
+                health += 5;
+
+                Destroy(closestNote);
+
+                return;
+            }
+            if (yPos >= -3.5f && yPos <= -2f)
+            {
+                Debug.Log("HIT EARLY");
                 health += 5;
 
                 Destroy(closestNote);
@@ -85,7 +94,7 @@ public class inpurmamahger : MonoBehaviour
             }
         }
 
-        Debug.Log("</3>");
+        Debug.Log("HIT MISS");
         health -= 5;
 
         if (health < 0)

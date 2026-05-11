@@ -3,7 +3,7 @@ using UnityEngine;
 public class NoteSpawner : MonoBehaviour
 {
     public GameObject notePrefab;
-    float[] laneX = { -3f, -1f, 1f, 3f };
+    float[] laneX = { -1.5f, -0.5f, 0.5f, 1.5f };
     public void SpawnNote(int lane)
     {
         Vector3 pos = new Vector3(laneX[lane], 5f, 0f);
@@ -13,6 +13,6 @@ public class NoteSpawner : MonoBehaviour
 
         Note n = note.GetComponent<Note>();
         n.lane = lane;
-        Debug.Log("Spawned note in lane: " + lane + " " + n.lane);
+        //Debug.Log("Spawned note in lane: " + lane + " " + n.lane);
     }
 }
