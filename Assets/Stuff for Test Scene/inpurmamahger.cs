@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class inpurmamahger : MonoBehaviour
 {
@@ -85,5 +87,11 @@ public class inpurmamahger : MonoBehaviour
 
         Debug.Log("</3>");
         health -= 5;
+
+        if (health < 0)
+        {
+            
+        }
+            
     }
 }
