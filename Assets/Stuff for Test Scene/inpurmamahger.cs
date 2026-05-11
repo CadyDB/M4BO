@@ -90,8 +90,13 @@ public class inpurmamahger : MonoBehaviour
 
         if (health < 0)
         {
-            
+            Die();
         }
+        
             
+    }
+    private void Die()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
     }
 }
