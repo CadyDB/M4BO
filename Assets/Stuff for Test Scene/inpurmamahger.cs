@@ -2,20 +2,20 @@ using UnityEngine;
 
 public class inpurmamahger : MonoBehaviour
 {
-    float hitLineY = -3.72f;
+    float hitLineY = -3.72f;//link met scene line
 
     public int health = 50;
     public float perfectRange = 0.3f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-         if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D))
         {
             //Debug.Log("Lane 0");
             CheckLane(0);
@@ -40,47 +40,50 @@ public class inpurmamahger : MonoBehaviour
         }
     }
     void CheckLane(int lane)
-{
-    GameObject[] notes = GameObject.FindGameObjectsWithTag("Note");
-
-    GameObject closestNote = null;
-
-    float closestDistance = 999999f;
-
-    foreach (GameObject noteObj in notes)
     {
-        Note note = noteObj.GetComponent<Note>();
+        GameObject[] notes = GameObject.FindGameObjectsWithTag("Note");//bij opstarten laden
 
-        if (note.lane == lane)
+        GameObject closestNote = null;
+
+        float closestDistance = 999999f;
+
+        foreach (GameObject noteObj in notes)
         {
-            float distance = Mathf.Abs(
-                note.transform.position.y - hitLineY
-            );
+            Note note = noteObj.GetComponent<Note>();
 
-            if (distance < closestDistance)
+            Debug.Log("note: " + note.name + " note.lane: " + note.lane + " ==? " + lane);
+            if (note.lane == lane)//per lane bewaren
             {
-                closestDistance = distance;
-                closestNote = noteObj;
+                float distance = Mathf.Abs(
+                    note.transform.position.y - hitLineY // 0 --4 = +4 // -3.99 +4 = 0.01
+                );
+
+                Debug.Log("note: " + note.name + " distance: " + distance);
+                if (distance < closestDistance)
+                {
+                    closestDistance = distance;
+                    closestNote = noteObj;
+                }
             }
         }
-    }
 
-    if (closestNote != null)
-    {
-        float yPos = closestNote.transform.position.y;
-
-        if (yPos >= -5f && yPos <= -3f)
+        if (closestNote != null)
         {
-            Debug.Log("hittttttt");
-            health += 5;
+            Debug.Log("closestNote: " + closestNote.name + " distance: " + closestDistance);
+            float yPos = closestNote.transform.position.y;
 
-            Destroy(closestNote);
+            if (yPos >= -6f && yPos <= -2f)
+            {
+                Debug.Log("hittttttt");
+                health += 5;
 
-            return;
+                Destroy(closestNote);
+
+                return;
+            }
         }
-    }
 
-    Debug.Log("</3>");
+        Debug.Log("</3>");
         health -= 5;
-}
+    }
 }

@@ -2,9 +2,8 @@ using UnityEngine;
 using System.Collections;
 public class chartreader : MonoBehaviour
 {
-    public GameObject notePrefab;
+    // public GameObject notePrefab;
 
-    float[] laneX = { -3f, -1f, 1f, 3f };
 
     string[] chart =
     {
@@ -22,6 +21,7 @@ public class chartreader : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     IEnumerator Start()
     {
+        NoteSpawner spawner = GetComponent<NoteSpawner>();
         for (int row = 0; row < chart.Length; row++)
         {
             string line = chart[row];
@@ -30,22 +30,11 @@ public class chartreader : MonoBehaviour
             {
                 if (line[lane] == '0')
                 {
-                    SpawnNote(lane);
+                    spawner.SpawnNote(lane);
                 }
             }
 
             yield return new WaitForSeconds(beatTime);
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    void SpawnNote(int lane)
-    {
-        Vector3 pos = new Vector3(laneX[lane], 5f, 0f);
-
-        Instantiate(notePrefab, pos, Quaternion.identity);
     }
 }
