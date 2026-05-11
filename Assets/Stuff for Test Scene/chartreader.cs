@@ -7,13 +7,13 @@ public class chartreader : MonoBehaviour
 
     string[] chart =
     {
-        "0---",
+        "0-0-",
         "-0--",
         "--0-",
         "-0--",
         "0---",
         "---0",
-        "----",
+        "---0",
         "---0"
     };
 
