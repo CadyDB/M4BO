@@ -7,12 +7,12 @@ public class chartreader : MonoBehaviour
 
     string[] chart =
     {
-        "0---",
-        "----",
-        "-0--",
-        "----",
-        "--0-",
-        "----",
+        "0--x",
+        "---x",
+        "-0-x",
+        "---x",
+        "--0x",
+        "---x",
         "---0",
         "----",
         "0---",
@@ -85,6 +85,10 @@ public class chartreader : MonoBehaviour
             for (int lane = 0; lane < 4; lane++)
             {
                 if (line[lane] == '0')
+                {
+                    spawner.SpawnNote(lane);
+                }
+                if (line[lane] == 'x')
                 {
                     spawner.SpawnNote(lane);
                 }
