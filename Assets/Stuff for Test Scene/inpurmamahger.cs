@@ -86,7 +86,7 @@ public class inpurmamahger : MonoBehaviour
             if (yPos >= -3.5f && yPos <= -2f)
             {
                 Debug.Log("HIT EARLY");
-                health += 5;
+                health += 2;
 
                 Destroy(closestNote);
 
