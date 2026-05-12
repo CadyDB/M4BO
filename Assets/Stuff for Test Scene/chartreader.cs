@@ -88,13 +88,25 @@ public class chartreader : MonoBehaviour
                 {
                     spawner.SpawnNote(lane);
                 }
+            }
+
+            yield return new WaitForSeconds(beatTime);
+        }
+        NoteSpawnerX spawnerX = GetComponent<NoteSpawnerX>();
+        for (int row = 0; row < chart.Length; row++)
+        {
+            string line = chart[row];
+
+            for (int lane = 0; lane < 4; lane++)
+            {
                 if (line[lane] == 'x')
                 {
-                    spawner.SpawnNote(lane);
+                    spawnerX.SpawnNote(lane);
                 }
             }
 
             yield return new WaitForSeconds(beatTime);
         }
+        
     }
 }
