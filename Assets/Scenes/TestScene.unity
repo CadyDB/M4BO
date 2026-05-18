@@ -521,7 +521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ec0b494b6468a64a821f6dce7bec920, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::notespwner
-  notePrefab: {fileID: 5469521771866400820, guid: f3ab7c186be2db5409a456eddd882a68, type: 3}
+  notePrefab: {fileID: 6879486150135517508, guid: 3350f569e077cbc458e2384bc8331303, type: 3}
 --- !u!4 &1452351589
 Transform:
   m_ObjectHideFlags: 0
