@@ -299,7 +299,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 2bd834f2ddad4a747bd1ab4ce6aa5bad, type: 3}
+  m_Resource: {fileID: 8300000, guid: 4d9012cd1aeb75d468ccd75036f979a5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -459,7 +459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d200b4b8ab6a14fab33f8db08096a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::chartreader
-  beatTime: 0.5
+  beatTime: 0.10714286
 --- !u!1 &2029885927
 GameObject:
   m_ObjectHideFlags: 0
