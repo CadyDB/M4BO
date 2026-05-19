@@ -7,6 +7,7 @@ public class inpurmamahger : MonoBehaviour
     float hitLineY = -3.72f;//link met scene line
 
     public int health = 50;
+    public float score = 0f;
     public float perfectRange = 0.3f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -78,6 +79,7 @@ public class inpurmamahger : MonoBehaviour
             {
                 Debug.Log("HIT PERFECT");
                 health += 5;
+                score += 30;
 
                 Destroy(closestNote);
 
@@ -87,6 +89,7 @@ public class inpurmamahger : MonoBehaviour
             {
                 Debug.Log("HIT EARLY");
                 health += 2;
+                score += 15;
 
                 Destroy(closestNote);
 
@@ -96,6 +99,7 @@ public class inpurmamahger : MonoBehaviour
 
         Debug.Log("HIT MISS");
         health -= 5;
+        score -= 10;
 
         if (health < 0)
         {
