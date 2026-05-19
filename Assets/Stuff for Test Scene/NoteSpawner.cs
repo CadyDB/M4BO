@@ -3,7 +3,7 @@ using UnityEngine;
 public class NoteSpawner : MonoBehaviour
 {
     public GameObject notePrefab;
-    float[] laneX = { -1.5f, -0.5f, 0.5f, 1.5f };
+    float[] laneX = { -6.68f, -5.5f, -4.3f, -3.2f };
     public void SpawnNote(int lane)
     {
         Vector3 pos = new Vector3(laneX[lane], 5f, 0f);

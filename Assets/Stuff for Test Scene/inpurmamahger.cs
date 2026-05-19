@@ -6,8 +6,8 @@ public class inpurmamahger : MonoBehaviour
 {
     float hitLineY = -3.72f;//link met scene line
 
-    public int health = 50;
-    public float score = 0f;
+    public int health = Mathf.Clamp(100, 0, 100);
+    public int score = 0;
     public float perfectRange = 0.3f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -88,7 +88,7 @@ public class inpurmamahger : MonoBehaviour
             if (yPos >= -3.5f && yPos <= -2f)
             {
                 Debug.Log("HIT EARLY");
-                health += 2;
+                health += 0;
                 score += 15;
 
                 Destroy(closestNote);
@@ -111,5 +111,9 @@ public class inpurmamahger : MonoBehaviour
     private void Die()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+    }
+    public void h0ealth()
+    {
+        health = Mathf.Clamp(health, 0, 100);
     }
 }
