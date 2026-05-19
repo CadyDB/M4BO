@@ -4,8 +4,8 @@ import time
 keys = ['d', 'f', 'j', 'k']
 lane_map = {k: i for i, k in enumerate(keys)}
 
-tick_rate = 0.1  # row speed (100ms per line)
-window = 0.1    # chord window (50ms grouping)
+tick_rate = 0.1
+window = 0.1    
 
 chart = []
 
@@ -16,7 +16,6 @@ last_tick = time.time()
 
 print("Recording... ESC to stop.")
 
-# 🎮 GLOBAL KEY LISTENER
 def on_key(event):
     if event.event_type == keyboard.KEY_DOWN:
         if event.name in lane_map:
@@ -29,7 +28,6 @@ while True:
 
     now = time.time()
 
-    # collect key presses in real time
     event = keyboard.read_event(suppress=False)
 
     if event.event_type == keyboard.KEY_DOWN:
@@ -38,11 +36,9 @@ while True:
         if key in lane_map:
             pressed_keys.append((key, now))
 
-    # tick: flush row
     if now - last_tick >= tick_rate:
         row = ['-'] * len(keys)
 
-        # only keep keys inside the window
         valid = [k for k, t in pressed_keys if now - t <= window]
 
         for k in valid:
@@ -50,10 +46,9 @@ while True:
 
         chart.append("".join(row))
 
-        pressed_keys = []  # reset
+        pressed_keys = [] 
         last_tick += tick_rate
 
-# save file
 with open("chart.txt", "w") as f:
     f.write("\n".join(chart))
 
