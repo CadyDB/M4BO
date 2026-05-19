@@ -103,5 +103,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95041e61d5fcab444a08439a08263e32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Note
-  speed: 10
+  speed: 15
   lane: 0
