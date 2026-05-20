@@ -31,13 +31,13 @@ Ts pmo sm </3
 # 8-5-2026
 # 15:53
 
-i am so done with ts.
+i am so done with ts but the game lowkey works...
 
 -----------------------------------------------------  
 
 # 20-5-2026
 # 23:56
 
-ehhh pause works and going back to the level select but restart does not cause it reloads the scene but the notes hang on the top  for some reason... also score works but for the live of me i could not get the font working... whateverrrrr! hmpf! o((>ω< ))o
+ehhh pause works and going back to the level select but restart does not cause it reloads the scene but the notes hang on the top  for some reason... also score works but for the live of me i could not get the font working... whateverrrrr~ hmpf! o((>ω< ))o
 
 
