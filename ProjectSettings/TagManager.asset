@@ -7,6 +7,7 @@ TagManager:
   - not
   - Note
   - Note2
+  - Score
   layers:
   - Default
   - TransparentFX

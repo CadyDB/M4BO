@@ -1,18 +1,20 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class inpurmamahger : MonoBehaviour
 {
     float hitLineY = -3.72f;//link met scene line
 
     public int health = Mathf.Clamp(100, 0, 100);
-    public int score = 0;
+    public static int score = 0;
     public float perfectRange = 0.3f;
+    public  TextMeshProUGUI scoreText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        scoreText = GameObject.FindWithTag("Score").GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame
@@ -41,9 +43,11 @@ public class inpurmamahger : MonoBehaviour
             //Debug.Log("Lane 3");
             CheckLane(3);
         }
+        scoreText.text = inpurmamahger.score.ToString();
     }
     void CheckLane(int lane)
     {
+        
         GameObject[] notes = GameObject.FindGameObjectsWithTag("Note");//bij opstarten laden
 
         GameObject closestNote = null;
@@ -99,7 +103,6 @@ public class inpurmamahger : MonoBehaviour
 
         Debug.Log("HIT MISS");
         health -= 5;
-        score -= 10;
 
         if (health < 0)
         {
