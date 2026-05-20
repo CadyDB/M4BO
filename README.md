@@ -2,6 +2,7 @@
 
 -----------------------------------------------------  
 
+# 8-5-2026
 # 13:08
 
 So u am kinda bored and got working on a simple script to make the notes go down and that when you press a key at the perfect timing the note disapears and if you don't then yea nothing happens with the note and it just goes down...
@@ -16,6 +17,7 @@ its not really done yet and i am just at the point where i know that i have impu
 
 -----------------------------------------------------  
 
+# 8-5-2026
 # 13:49
 
 Bruh i was getting so pissed at the note script not being located by the imput manager and turnes out i just had my note script without a capital letter so i changed it and it still did NOT work and i was getting so pissed and turns out i just frogot to change the public class from note to NOTE...
@@ -26,7 +28,15 @@ Ts pmo sm </3
 
 -----------------------------------------------------  
 
+# 8-5-2026
 # 15:53
 
 i am so done with ts.
+-----------------------------------------------------  
+
+# 20-5-2026
+# 23:56
+
+ehhh pause works and going back to the level select but restart does not cause it reloads the scene but the notes hang on the top  for some reason... also score works but for the live of me i could not get the font working... whateverrrrr! hmpf! o((>ω< ))o
+
 
