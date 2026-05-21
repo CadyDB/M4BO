@@ -28,10 +28,22 @@ public class inpurmamahger : MonoBehaviour
             //als note returned ->  check holdnote? -> YES  -> bewaar
         }
 
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            //Debug.Log("Lane 0");
+            //CheckLane(0);
+        }
+
         if (Input.GetKeyDown(KeyCode.F))
         {
             //Debug.Log("Lane 1");
             CheckLane(1);
+        }
+
+        if (Input.GetKeyUp(KeyCode.F))
+        {
+            //Debug.Log("Lane 1");
+            //CheckLane(1);
         }
 
         if (Input.GetKeyDown(KeyCode.J))
@@ -40,10 +52,22 @@ public class inpurmamahger : MonoBehaviour
             CheckLane(2);
         }
 
+        if (Input.GetKeyUp(KeyCode.J))
+        {
+            //Debug.Log("Lane 2");
+            //CheckLane(2);
+        }
+
         if (Input.GetKeyDown(KeyCode.K))
         {
             //Debug.Log("Lane 3");
             CheckLane(3);
+        }
+        
+        if (Input.GetKeyUp(KeyCode.K))
+        {
+            //Debug.Log("Lane 3");
+            //CheckLane(3);
         }
         scoreText.text = inpurmamahger.score.ToString();
     }
