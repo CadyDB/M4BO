@@ -20,10 +20,12 @@ public class inpurmamahger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    //for all holdnotes -> check of knop nog ingedrukt isj
         if (Input.GetKeyDown(KeyCode.D))
         {
             //Debug.Log("Lane 0");
             CheckLane(0);
+            //als note returned ->  check holdnote? -> YES  -> bewaar
         }
 
         if (Input.GetKeyDown(KeyCode.F))
@@ -45,7 +47,7 @@ public class inpurmamahger : MonoBehaviour
         }
         scoreText.text = inpurmamahger.score.ToString();
     }
-    void CheckLane(int lane)
+    Note CheckLane(int lane)
     {
         
         GameObject[] notes = GameObject.FindGameObjectsWithTag("Note");//bij opstarten laden
@@ -58,6 +60,7 @@ public class inpurmamahger : MonoBehaviour
         {
             Note note = noteObj.GetComponent<Note>();
 
+        //als deze note een hold is (boolean) return note
             //Debug.Log("note: " + note.name + " note.lane: " + note.lane + " ==? " + lane);
             if (note.lane == lane)//per lane bewaren
             {
@@ -87,7 +90,7 @@ public class inpurmamahger : MonoBehaviour
 
                 Destroy(closestNote);
 
-                return;
+                return closestNote.GetComponent<Note>();
             }
             if (yPos >= -3.5f && yPos <= -2f)
             {
@@ -97,7 +100,7 @@ public class inpurmamahger : MonoBehaviour
 
                 Destroy(closestNote);
 
-                return;
+                return closestNote.GetComponent<Note>();
             }
         }
 
@@ -108,6 +111,7 @@ public class inpurmamahger : MonoBehaviour
         {
             Die();
         }
+        return null;
         
             
     }

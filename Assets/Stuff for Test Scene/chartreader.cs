@@ -3229,6 +3229,7 @@ public class chartreader : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     IEnumerator Start()
     {
+    Debug.Log("Starting note spawning...");
         NoteSpawner spawner = GetComponent<NoteSpawner>();
         for (int row = 0; row < chart.Length; row++)
         {

@@ -11,6 +11,7 @@ public class NoteSpawner : MonoBehaviour
         GameObject note = Instantiate(notePrefab, pos, Quaternion.identity);
 
 
+    // Debug.Log("SpawnNote." + lane);
         Note n = note.GetComponent<Note>();
         n.lane = lane;
         //Debug.Log("Spawned note in lane: " + lane + " " + n.lane);
