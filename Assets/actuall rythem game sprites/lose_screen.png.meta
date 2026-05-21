@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: 0966cc50968ba254cbd1efab5e39351a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7552187057120390272
+    second: lose_screen_0
+  - first:
+      213: -7654969321455483811
+    second: lose_screen_1
+  - first:
+      213: -7650767829075190044
+    second: lose_screen_2
+  - first:
+      213: -7879344779119453550
+    second: lose_screen_3
+  - first:
+      213: -3526181545425219966
+    second: lose_screen_4
+  - first:
+      213: -3581491584782930293
+    second: lose_screen_5
+  - first:
+      213: -4679089049303776718
+    second: lose_screen_6
+  - first:
+      213: -1699058771025843741
+    second: lose_screen_7
+  - first:
+      213: 8017646059540661876
+    second: lose_screen_8
+  - first:
+      213: 5842275886705219650
+    second: lose_screen_9
+  - first:
+      213: -7972896345967682171
+    second: lose_screen_10
+  - first:
+      213: -5716898568744865887
+    second: lose_screen_11
+  - first:
+      213: 7174197829080897193
+    second: lose_screen_12
+  - first:
+      213: 1312938741361222665
+    second: lose_screen_13
+  - first:
+      213: -2679935040347009367
+    second: lose_screen_14
+  - first:
+      213: -8782926789149300883
+    second: lose_screen_15
+  - first:
+      213: 1888774774839159190
+    second: lose_screen_16
+  - first:
+      213: 389233500779765193
+    second: lose_screen_17
+  - first:
+      213: -7831575967926258344
+    second: lose_screen_18
+  - first:
+      213: 1788609183189722003
+    second: lose_screen_19
+  - first:
+      213: -6971436876910679954
+    second: lose_screen_20
+  - first:
+      213: 240070081839248832
+    second: lose_screen_21
+  - first:
+      213: 6018366303312194755
+    second: lose_screen_22
+  - first:
+      213: -767586953523224707
+    second: lose_screen_23
+  - first:
+      213: -6713424373563739086
+    second: lose_screen_24
+  - first:
+      213: -3710931610508982802
+    second: lose_screen_25
+  - first:
+      213: 1593684870638012334
+    second: lose_screen_26
+  - first:
+      213: -7673466709595653724
+    second: lose_screen_27
+  - first:
+      213: -6309124797800877683
+    second: lose_screen_28
+  - first:
+      213: -3608756277462272574
+    second: lose_screen_29
+  - first:
+      213: 7278417257221675869
+    second: lose_screen_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: VisionOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lose_screen_0
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 944
+        width: 372
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ca6f08d12cec860800000000000000
+      internalID: 7552187057120390272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_1
+      rect:
+        serializedVersion: 2
+        x: 1316
+        y: 963
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54022cb5f514c590800000000000000
+      internalID: -7654969321455483811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_2
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 936
+        width: 43
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee9cf8e13303d590800000000000000
+      internalID: -7650767829075190044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_3
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 941
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29a91c18ba1f6a290800000000000000
+      internalID: -7879344779119453550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_4
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 814
+        width: 68
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e4463219c701fc0800000000000000
+      internalID: -3526181545425219966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_5
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 114
+        width: 847
+        height: 812
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e66f2116cfb4ec0800000000000000
+      internalID: -3581491584782930293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_6
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 924
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23204dfec49801fb0800000000000000
+      internalID: -4679089049303776718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_7
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 921
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e92e7cbc0bbb68e0800000000000000
+      internalID: -1699058771025843741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_8
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 921
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4764bb1ac96644f60800000000000000
+      internalID: 8017646059540661876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_9
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 921
+        width: 162
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24815ea17fee31150800000000000000
+      internalID: 5842275886705219650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_10
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 900
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d169bf3059a5190800000000000000
+      internalID: -7972896345967682171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 877
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afe5098a0f79a0b0800000000000000
+      internalID: -5716898568744865887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_12
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 880
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a6debe3aeedf8360800000000000000
+      internalID: 7174197829080897193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_13
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 835
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9042faa34de783210800000000000000
+      internalID: 1312938741361222665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_14
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 746
+        width: 107
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae8efa9745fecad0800000000000000
+      internalID: -2679935040347009367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_15
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 818
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d676e748e96cc1680800000000000000
+      internalID: -8782926789149300883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_16
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 281
+        width: 38
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699a10b86a6463a10800000000000000
+      internalID: 1888774774839159190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_17
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 211
+        width: 54
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cdd8a48ec5d66500800000000000000
+      internalID: 389233500779765193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_18
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 137
+        width: 40
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855f4409627a05390800000000000000
+      internalID: -7831575967926258344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_19
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 146
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393660e539a62d810800000000000000
+      internalID: 1788609183189722003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_20
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 118
+        width: 265
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e682ea1c81b704f90800000000000000
+      internalID: -6971436876910679954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_21
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 134
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c53a3da776e45300800000000000000
+      internalID: 240070081839248832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_22
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 96
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ccaa152448858350800000000000000
+      internalID: 6018366303312194755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_23
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 102
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f160d8bbbf855f0800000000000000
+      internalID: -767586953523224707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_24
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 108
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 234b84bf91025d2a0800000000000000
+      internalID: -6713424373563739086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_25
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 103
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee508d19c5f108cc0800000000000000
+      internalID: -3710931610508982802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_26
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 105
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea70b4632f7ed1610800000000000000
+      internalID: 1593684870638012334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_27
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 113
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9f3c2feae528590800000000000000
+      internalID: -7673466709595653724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_28
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 107
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81787f6c6c7178a0800000000000000
+      internalID: -6309124797800877683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_29
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 97
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c576e0294f1bedc0800000000000000
+      internalID: -3608756277462272574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lose_screen_30
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 97
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b55c7cee1220560800000000000000
+      internalID: 7278417257221675869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lose_screen_0: 7552187057120390272
+      lose_screen_1: -7654969321455483811
+      lose_screen_10: -7972896345967682171
+      lose_screen_11: -5716898568744865887
+      lose_screen_12: 7174197829080897193
+      lose_screen_13: 1312938741361222665
+      lose_screen_14: -2679935040347009367
+      lose_screen_15: -8782926789149300883
+      lose_screen_16: 1888774774839159190
+      lose_screen_17: 389233500779765193
+      lose_screen_18: -7831575967926258344
+      lose_screen_19: 1788609183189722003
+      lose_screen_2: -7650767829075190044
+      lose_screen_20: -6971436876910679954
+      lose_screen_21: 240070081839248832
+      lose_screen_22: 6018366303312194755
+      lose_screen_23: -767586953523224707
+      lose_screen_24: -6713424373563739086
+      lose_screen_25: -3710931610508982802
+      lose_screen_26: 1593684870638012334
+      lose_screen_27: -7673466709595653724
+      lose_screen_28: -6309124797800877683
+      lose_screen_29: -3608756277462272574
+      lose_screen_3: -7879344779119453550
+      lose_screen_30: 7278417257221675869
+      lose_screen_4: -3526181545425219966
+      lose_screen_5: -3581491584782930293
+      lose_screen_6: -4679089049303776718
+      lose_screen_7: -1699058771025843741
+      lose_screen_8: 8017646059540661876
+      lose_screen_9: 5842275886705219650
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
