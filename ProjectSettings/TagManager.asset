@@ -45,5 +45,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: far bg
+    uniqueID: 4030277595
+    locked: 0
+  - name: close bg
+    uniqueID: 147603497
+    locked: 0
+  - name: gradient
+    uniqueID: 2098486437
+    locked: 0
   m_RenderingLayers:
   - Default
