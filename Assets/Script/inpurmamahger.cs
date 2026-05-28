@@ -1,20 +1,33 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 using TMPro;
+using System;
 
 public class inpurmamahger : MonoBehaviour
 {
+    private List<string> bumperTags = new List<string>();   //lijst met geraakte tags
+    private int scoreMultiplier = 1;
+    public static Action<int, int> OnScoreChange { get; internal set; }
+    public static event Action<string, int> onBumperHit;
     float hitLineY = -3.72f;//link met scene line
-
     public int health = Mathf.Clamp(100, 0, 100);
     public static int score = 0;
     public float perfectRange = 0.3f;
+    public static inpurmamahger Instance;
+    
     public  TextMeshProUGUI scoreText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         scoreText = GameObject.FindWithTag("Score").GetComponent<TextMeshProUGUI>();
+        inpurmamahger.onBumperHit += CheckForCombo;
+    }
+    private void OnDisable()
+    {
+        inpurmamahger.onBumperHit -= CheckForCombo;
+        //stop met luisteren naar action event onBumperHit als scene herstart of game stopt             
     }
 
     // Update is called once per frame
@@ -146,5 +159,33 @@ public class inpurmamahger : MonoBehaviour
     public void h0ealth()
     {
         health = Mathf.Clamp(health, 0, 100);
+    }
+    private void CheckForCombo(string tag, int bumperValue)
+    {
+
+        Debug.Log("check combo");
+        bumperTags.Add(tag);                              
+        if (bumperTags.Count > 1)                      
+        {
+            if (bumperTags[bumperTags.Count - 2] == bumperTags[bumperTags.Count - 1])
+            {
+                scoreMultiplier++;
+            }
+            else
+            {
+                scoreMultiplier = 1;
+                bumperTags.Clear();
+            }
+        }                                                   
+        inpurmamahger.Instance.AddScore(bumperValue * scoreMultiplier);
+
+        //print score en multiplier in de console
+        Debug.Log($"Score: {score} || Multiplier: {scoreMultiplier}X");
+    }
+    public void AddScore(int amount)
+    {
+        score = score + amount;
+        // debug voor testen
+       Debug.Log("Score: " + score);
     }
 }
