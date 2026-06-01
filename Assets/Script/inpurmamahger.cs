@@ -1,9 +1,12 @@
+using System;
+using System.Collections;
+using NUnit.Framework;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using TMPro;
-using System;
 
 public class inpurmamahger : MonoBehaviour
 {
@@ -23,6 +26,7 @@ public class inpurmamahger : MonoBehaviour
     {
         scoreText = GameObject.FindWithTag("Score").GetComponent<TextMeshProUGUI>();
         inpurmamahger.onBumperHit += CheckForCombo;
+        
     }
     private void OnDisable()
     {
