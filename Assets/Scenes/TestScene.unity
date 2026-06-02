@@ -374,6 +374,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1515950342}
+  - {fileID: 1999714794}
   m_Father: {fileID: 1367671971}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -415,7 +416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -868, y: 401}
+  m_AnchoredPosition: {x: -727.2, y: 321.5}
   m_SizeDelta: {x: 134.2828, y: 238.5332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &347170464
@@ -1322,7 +1323,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: d0d2c6718f06a19458e9b8d7baf493a0, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1330,7 +1331,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 125
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1887,8 +1888,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7f804642821d5a41845d940da6cfc1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::inpurmamahger
+  comboMultiplier: 1
   health: 50
   perfectRange: 0.3
+  healthImage: {fileID: 1515950343}
   scoreText: {fileID: 0}
 --- !u!114 &1452351588
 MonoBehaviour:
@@ -2159,8 +2162,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.5, y: -3.7}
-  m_SizeDelta: {x: 50.21, y: 533.71}
+  m_AnchoredPosition: {x: -1.5, y: -0.9}
+  m_SizeDelta: {x: 46.4, y: 448.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515950343
 MonoBehaviour:
@@ -2182,11 +2185,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
+  m_Sprite: {fileID: 3813611331420191444, guid: ccd8f43633ec864428bf91c060a85e5a, type: 3}
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
-  m_FillMethod: 4
+  m_FillMethod: 1
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
@@ -2490,7 +2493,7 @@ GameObject:
   - component: {fileID: 1999714794}
   - component: {fileID: 1999714793}
   m_Layer: 0
-  m_Name: healthbar
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2562,12 +2565,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999714792}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.24}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -801, y: -450.5, z: 0.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 296848190}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2029885927
 GameObject:
@@ -2856,4 +2859,3 @@ SceneRoots:
   - {fileID: 410897158}
   - {fileID: 663583809}
   - {fileID: 1367671971}
-  - {fileID: 1999714794}
