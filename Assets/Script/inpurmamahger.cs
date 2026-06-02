@@ -40,9 +40,12 @@ public int comboMultiplier = 1;
     
     void Update()
     {
+        for (int i = 0; i < lanenotes.Length; i++) 
+        { 
 
-    //for all holdnotes -> check of knop nog ingedrukt isj
-        if (Input.GetKeyDown(KeyCode.D))
+        }
+            //for all holdnotes -> check of knop nog ingedrukt isj
+            if (Input.GetKeyDown(KeyCode.D))
         {
             //Debug.Log("Lane 0");
             lanenotes[0] = CheckLane(0); 
