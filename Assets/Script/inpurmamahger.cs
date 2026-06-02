@@ -42,7 +42,7 @@ public int comboMultiplier = 1;
     {
         for (int i = 0; i < lanenotes.Length; i++) 
         { 
-
+            //checkHoldNote(i);
         }
             //for all holdnotes -> check of knop nog ingedrukt isj
             if (Input.GetKeyDown(KeyCode.D))
