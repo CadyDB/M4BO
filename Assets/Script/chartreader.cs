@@ -7,7 +7,7 @@ public class chartreader : MonoBehaviour
 
     string[] chart =
     {
-        "-00-",
+        "-10-",
         "----",
         "----",
         "---0",
@@ -3237,29 +3237,29 @@ public class chartreader : MonoBehaviour
 
             for (int lane = 0; lane < 4; lane++)
             {
-                if (line[lane] == '0')
+                if (line[lane] != '-')
                 {
-                    spawner.SpawnNote(lane);
+                    spawner.SpawnNote(lane, line[lane]);
                 }
             }
 
             yield return new WaitForSeconds(beatTime);
         }
-        NoteSpawnerX spawnerX = GetComponent<NoteSpawnerX>();
-        for (int row = 0; row < chart.Length; row++)
-        {
-            string line = chart[row];
+        //NoteSpawnerX spawnerX = GetComponent<NoteSpawnerX>();
+        //for (int row = 0; row < chart.Length; row++)
+        //{
+        //    string line = chart[row];
 
-            for (int lane = 0; lane < 4; lane++)
-            {
-                if (line[lane] == 'x')
-                {
-                    spawnerX.SpawnNote(lane);
-                }
-            }
+        //    for (int lane = 0; lane < 4; lane++)
+        //    {
+        //        if (line[lane] == 'x')
+        //        {
+        //            spawnerX.SpawnNote(lane);
+        //        }
+        //    }
 
-            yield return new WaitForSeconds(beatTime);
-        }
+        //    yield return new WaitForSeconds(beatTime);
+        //}
         
     }
 }

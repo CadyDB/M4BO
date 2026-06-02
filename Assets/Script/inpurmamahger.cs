@@ -23,7 +23,8 @@ public int comboMultiplier = 1;
     public Image healthImage;
     
     public  TextMeshProUGUI scoreText;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Note[] lanenotes = new Note[4];
+   
     void Start()
     {
         scoreText = GameObject.FindWithTag("Score").GetComponent<TextMeshProUGUI>();
@@ -36,57 +37,33 @@ public int comboMultiplier = 1;
         //stop met luisteren naar action event onBumperHit als scene herstart of game stopt             
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
+
     //for all holdnotes -> check of knop nog ingedrukt isj
         if (Input.GetKeyDown(KeyCode.D))
         {
             //Debug.Log("Lane 0");
-            CheckLane(0);
+            lanenotes[0] = CheckLane(0); 
             //als note returned ->  check holdnote? -> YES  -> bewaar
-        }
-
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            //Debug.Log("Lane 0");
-            //CheckLane(0);
         }
 
         if (Input.GetKeyDown(KeyCode.F))
         {
             //Debug.Log("Lane 1");
-            CheckLane(1);
+            lanenotes[1] = CheckLane(1);
         }
-
-        if (Input.GetKeyUp(KeyCode.F))
-        {
-            //Debug.Log("Lane 1");
-            //CheckLane(1);
-        }
-
         if (Input.GetKeyDown(KeyCode.J))
         {
             //Debug.Log("Lane 2");
-            CheckLane(2);
-        }
-
-        if (Input.GetKeyUp(KeyCode.J))
-        {
-            //Debug.Log("Lane 2");
-            //CheckLane(2);
+            lanenotes[2] = CheckLane(2);
         }
 
         if (Input.GetKeyDown(KeyCode.K))
         {
             //Debug.Log("Lane 3");
-            CheckLane(3);
-        }
-        
-        if (Input.GetKeyUp(KeyCode.K))
-        {
-            //Debug.Log("Lane 3");
-            //CheckLane(3);
+            lanenotes[3] = CheckLane(3);
         }
         scoreText.text = inpurmamahger.score.ToString();
         healthImage.fillAmount = health / 100f;
