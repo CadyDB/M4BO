@@ -42,7 +42,7 @@ public int comboMultiplier = 1;
     {
         for (int i = 0; i < lanenotes.Length; i++) 
         { 
-            //checkHeldNote(i);
+            checkHeldNote(i);
 
         }
             //for all holdnotes -> check of knop nog ingedrukt isj
@@ -73,6 +73,24 @@ public int comboMultiplier = 1;
         healthImage.fillAmount = health / 100f;
         health = Mathf.Clamp(health, 0, 100);
         comboMultiplier = Mathf.Min(comboMultiplier * 2, 16);
+    }
+    void checkHeldNote(int i)
+    {
+        //get currrent lane note
+        //Note currentNote;
+
+        //if( == null)
+        {
+            //check if null? if null stop/return
+            //return;
+        }
+        //if( -= null)
+        {
+            //if not null > check if is HELD note
+            //yes? is key still down?
+            // yes? then add score
+        }
+
     }
     Note CheckLane(int lane)
     {
