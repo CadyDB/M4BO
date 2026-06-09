@@ -74,24 +74,28 @@ public int comboMultiplier = 1;
         health = Mathf.Clamp(health, 0, 100);
         comboMultiplier = Mathf.Min(comboMultiplier * 2, 16);
     }
-    void checkHeldNote(int i)
+    void checkHeldNote(int lane)
     {
-        //get currrent lane note
-        //Note currentNote;
-
-        //if( == null)
+        Note note = lanenotes[lane];
+        if (note != null)
         {
-            //check if null? if null stop/return
-            //return;
+            if (Input.GetKey(KeyCode.D) && lane == 0 ||
+                Input.GetKey(KeyCode.F) && lane == 1 ||
+                Input.GetKey(KeyCode.J) && lane == 2 ||
+                Input.GetKey(KeyCode.K) && lane == 3)
+            {
+                Debug.Log("Holding note in lane " + lane);
+                // Hier kun je extra logica toevoegen voor het vasthouden van de note,
+                // zoals het verhogen van de score of het verlengen van de health boost.
+            }
+            else
+            {
+                // Debug.Log("Released hold note in lane " + lane);
+                lanenotes[lane] = null; // Reset de hold note als deze niet meer wordt vastgehouden
+            }
         }
-        //if( -= null)
-        {
-            //if not null > check if is HELD note
-            //yes? is key still down?
-            // yes? then add score
-        }
-
     }
+
     Note CheckLane(int lane)
     {
         

@@ -7,11 +7,11 @@ public class chartreader : MonoBehaviour
 
     string[] chart =
     {
-        "-10-",
+        "-70-",
         "----",
         "----",
         "---0",
-        "0---",
+        "0-7-",
         "----",
         "----",
         "--0-",
@@ -24,9 +24,9 @@ public class chartreader : MonoBehaviour
         "----",
         "--0-",
         "----",
-        "-0--",
+        "70--",
         "----",
-        "---0",
+        "--70",
         "0---",
         "----",
         "----",
@@ -35,12 +35,12 @@ public class chartreader : MonoBehaviour
         "----",
         "----",
         "--0-",
-        "-0--",
+        "-07-",
         "----",
         "----",
         "0---",
         "---0",
-        "----",
+        "7---",
         "----",
         "-0--",
         "--0-",
@@ -3229,7 +3229,7 @@ public class chartreader : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     IEnumerator Start()
     {
-    Debug.Log("Starting note spawning...");
+    //Debug.Log("Starting note spawning...");
         NoteSpawner spawner = GetComponent<NoteSpawner>();
         for (int row = 0; row < chart.Length; row++)
         {
