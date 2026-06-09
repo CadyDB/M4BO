@@ -7,126 +7,126 @@ public class chartreader : MonoBehaviour
 
     string[] chart =
     {
-        "-00-",
-        "----",
-        "----",
-        "---0",
-        "0---",
-        "----",
-        "----",
-        "--0-",
-        "----",
+        "-70-",
+        "-x--",
+        "-x--",
+        "-x-0",
+        "0x7-",
+        "-x--",
+        "-x--",
+        "-x0-",
+        "-x--",
         "-0--",
-        "----",
-        "---0",
-        "----",
-        "0---",
-        "----",
-        "--0-",
-        "----",
+        "-x--",
+        "-x-0",
+        "-x--",
+        "0x--",
+        "-x--",
+        "-x0-",
+        "-x--",
+        "70--",
+        "-x--",
+        "-x70",
+        "0x--",
+        "-x--",
+        "-x--",
         "-0--",
-        "----",
-        "---0",
-        "0---",
-        "----",
-        "----",
+        "-x0-",
+        "-x--",
+        "-x--",
+        "-x0-",
+        "-07-",
+        "-x--",
+        "-x--",
+        "0x--",
+        "-x-0",
+        "7x--",
+        "-x--",
+        "-x--",
+        "-x0-",
+        "-x--",
+        "-x--",
+        "-x-0",
+        "-x--",
+        "0x--",
+        "-x--",
+        "-x0-",
+        "-x--",
         "-0--",
-        "--0-",
-        "----",
-        "----",
-        "--0-",
+        "-x--",
+        "-x-0",
+        "-x--",
+        "0x--",
+        "-x--",
+        "-x0-",
+        "-x--",
         "-0--",
-        "----",
-        "----",
-        "0---",
-        "---0",
-        "----",
-        "----",
+        "-x--",
+        "-x-0",
+        "-x--",
+        "0x--",
+        "-x--",
+        "0x--",
         "-0--",
-        "--0-",
-        "----",
-        "----",
-        "---0",
-        "----",
-        "0---",
-        "----",
-        "--0-",
-        "----",
+        "-x--",
+        "-x0-",
+        "-x--",
+        "-x--",
+        "-x0-",
+        "-x--",
+        "-x-0",
+        "-x--",
         "-0--",
-        "----",
-        "---0",
-        "----",
-        "0---",
-        "----",
-        "--0-",
-        "----",
+        "-x--",
+        "-x-0",
+        "-x--",
+        "0x--",
+        "-x--",
+        "-x0-",
+        "-x--",
+        "-x--",
+        "-x--",
+        "-x-0",
+        "-x--",
+        "0x--",
+        "-x--",
+        "-x0-",
         "-0--",
-        "----",
-        "---0",
-        "----",
-        "0---",
-        "----",
-        "0---",
+        "-x--",
+        "-x--",
+        "-x-0",
+        "0x--",
+        "-x--",
+        "-x--",
+        "-x0-",
+        "-x--",
+        "-x--",
+        "xx--",
+        "0x--",
+        "-x-0",
+        "-x--",
+        "-x--",
+        "-x--",
+        "-x0-",
+        "-x--",
+        "-x--",
+        "0x--",
+        "-x-0",
+        "-x--",
+        "-x--",
+        "0x--",
         "-0--",
-        "----",
-        "--0-",
-        "----",
-        "----",
-        "--0-",
-        "----",
-        "---0",
-        "----",
-        "-0--",
-        "----",
-        "---0",
-        "----",
-        "0---",
-        "----",
-        "--0-",
-        "----",
-        "-0--",
-        "----",
-        "---0",
-        "----",
-        "0---",
-        "----",
-        "--0-",
-        "-0--",
-        "----",
-        "----",
-        "---0",
-        "0---",
-        "----",
-        "----",
-        "--0-",
-        "-0--",
-        "----",
-        "----",
-        "0---",
-        "---0",
-        "----",
-        "----",
-        "-0--",
-        "--0-",
-        "----",
-        "----",
-        "0---",
-        "---0",
-        "----",
-        "----",
-        "0---",
-        "-0--",
-        "--0-",
-        "---0",
-        "----",
-        "----",
-        "----",
-        "----",
-        "---0",
-        "0---",
-        "----",
-        "--0-",
-        "----",
+        "-x0-",
+        "-x-0",
+        "-x--",
+        "-x--",
+        "-x--",
+        "-x--",
+        "-x-0",
+        "0x--",
+        "-x--",
+        "-x0-",
+        "-x--",
         "-0--",
         "----",
         "---0",
@@ -3229,7 +3229,7 @@ public class chartreader : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     IEnumerator Start()
     {
-    Debug.Log("Starting note spawning...");
+    //Debug.Log("Starting note spawning...");
         NoteSpawner spawner = GetComponent<NoteSpawner>();
         for (int row = 0; row < chart.Length; row++)
         {
@@ -3237,29 +3237,29 @@ public class chartreader : MonoBehaviour
 
             for (int lane = 0; lane < 4; lane++)
             {
-                if (line[lane] == '0')
+                if (line[lane] != '-')
                 {
-                    spawner.SpawnNote(lane);
+                    spawner.SpawnNote(lane, line[lane]);
                 }
             }
 
             yield return new WaitForSeconds(beatTime);
         }
-        NoteSpawnerX spawnerX = GetComponent<NoteSpawnerX>();
-        for (int row = 0; row < chart.Length; row++)
-        {
-            string line = chart[row];
+        //NoteSpawnerX spawnerX = GetComponent<NoteSpawnerX>();
+        //for (int row = 0; row < chart.Length; row++)
+        //{
+        //    string line = chart[row];
 
-            for (int lane = 0; lane < 4; lane++)
-            {
-                if (line[lane] == 'x')
-                {
-                    spawnerX.SpawnNote(lane);
-                }
-            }
+        //    for (int lane = 0; lane < 4; lane++)
+        //    {
+        //        if (line[lane] == 'x')
+        //        {
+        //            spawnerX.SpawnNote(lane);
+        //        }
+        //    }
 
-            yield return new WaitForSeconds(beatTime);
-        }
+        //    yield return new WaitForSeconds(beatTime);
+        //}
         
     }
 }
