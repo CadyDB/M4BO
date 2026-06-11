@@ -41,3 +41,12 @@ i am so done with ts but the game lowkey works...
 ehhh pause works and going back to the level select but restart does not cause it reloads the scene but the notes hang on the top  for some reason... also score works but for the live of me i could not get the font working... whateverrrrr~ hmpf! o((>ω< ))o
 
 
+# 02:43 11-06-2026
+
+So like, a new pre-release if available. 
+
+its just to showcase what we have for now. very rough and not polished at all so yea don't expect a lot bruh but yeye.
+
+enjoy :)
+
+-------------------------------------------------------------------
