@@ -2,8 +2,12 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - not
+  - Note
+  - Note2
+  - Score
   layers:
   - Default
   - TransparentFX
@@ -38,6 +42,20 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: alles dat NIET de achtergrond is
+    uniqueID: 4017689349
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: far bg
+    uniqueID: 4030277595
+    locked: 0
+  - name: close bg
+    uniqueID: 147603497
+    locked: 0
+  - name: gradient
+    uniqueID: 2098486437
+    locked: 0
+  m_RenderingLayers:
+  - Default
