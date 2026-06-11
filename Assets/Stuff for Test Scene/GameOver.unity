@@ -380,6 +380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7035940428053490064, guid: 71403621a899aeb43b39b7949b0d04a9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartLevel1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5387551171065078410, guid: 71403621a899aeb43b39b7949b0d04a9, type: 3}

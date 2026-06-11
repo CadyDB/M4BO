@@ -77,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 2098486437
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -5584339283326706035, guid: 729c3bae3991a3b4da7e881f99b0dcea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -105,3 +105,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Note
   speed: 15
   lane: 0
+  noteLength: 1
