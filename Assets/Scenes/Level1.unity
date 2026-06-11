@@ -333,7 +333,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.5, y: 13.5}
+  m_AnchoredPosition: {x: -209.8, y: 13.5}
   m_SizeDelta: {x: 50.8, y: 539.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &228454618
@@ -1686,7 +1686,7 @@ Transform:
   m_GameObject: {fileID: 1119030029}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -960, y: -539.9, z: 0}
+  m_LocalPosition: {x: -961.93, y: -539.9, z: 0}
   m_LocalScale: {x: 0.99, y: -1.01, z: 1.09}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3026,7 +3026,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -865.8, y: 386.5}
+  m_AnchoredPosition: {x: 0, y: 386.5}
   m_SizeDelta: {x: 134.2828, y: 238.5332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1768921691
@@ -3083,7 +3083,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -3114,7 +3114,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -107.01575, y: 0, z: -104.21655, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -3376,7 +3376,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 80251c64aa1ce2543910c0851ec3cf18, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3474,7 +3474,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d200b4b8ab6a14fab33f8db08096a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::chartreader
-  beatTime: 0.2
+  beatTime: 0.1071429
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
