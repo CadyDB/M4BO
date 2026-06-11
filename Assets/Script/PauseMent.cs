@@ -37,4 +37,9 @@ public class PauseMent : MonoBehaviour
         AudioListener.pause = false;
         UnityEngine.SceneManagement.SceneManager.LoadScene("TestScene");
     }
+    public void RestartLevel1()
+    {
+        AudioListener.pause = false;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level1");
+    }
 }
