@@ -3,8 +3,6 @@ using System.Collections;
 public class chartreader : MonoBehaviour
 {
     // public GameObject notePrefab;
-
-
     string[] chart =
     {
         "----",

@@ -8,6 +8,7 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
+using System.Reflection;
 
 public class inpurmamahger : MonoBehaviour
 {
@@ -21,6 +22,10 @@ public int comboMultiplier = 1;
     public float perfectRange = 0.3f;
     public static inpurmamahger Instance;
     public Image healthImage;
+    public GameObject Perfect;
+    public GameObject Good;
+    public GameObject Bad;
+    public GameObject Miss;
     
     public  TextMeshProUGUI scoreText;
     private Note[] lanenotes = new Note[4];
@@ -136,6 +141,7 @@ public int comboMultiplier = 1;
                 Debug.Log("HIT PERFECT");
                 comboMultiplier *= 2;
                 health += 5;
+                Perfecthit();
                 score += 30 * comboMultiplier;
                 Destroy(closestNote);
                 return closestNote.GetComponent<Note>();
@@ -143,12 +149,14 @@ public int comboMultiplier = 1;
             if (yPos >= -3.5f && yPos <= -2f)
             {
                 Debug.Log("HIT EARLY");
+                Badhit();
                 score += 15 * comboMultiplier;
                 Destroy(closestNote);
                 return closestNote.GetComponent<Note>();
             }
         }
         Debug.Log("HIT MISS");
+        Misshit();
         comboMultiplier = 1;
         health -= 5;
         if (health < 0)
@@ -171,5 +179,20 @@ public int comboMultiplier = 1;
         score = score + amount;
         // debug voor testen
        Debug.Log("Score: " + score);
+    }
+    public void Perfecthit()
+    {
+        Instantiate(Perfect, new Vector2( 0, 0), Quaternion.identity);
+        Destroy(Perfect);
+    }
+    public void Misshit()
+    {
+        Instantiate(Miss, new Vector2( 0, 0), Quaternion.identity);
+        Destroy(Miss);
+    }
+    public void Badhit()
+    {
+        Instantiate(Bad, new Vector2( 0, 0), Quaternion.identity);
+        Destroy(Bad);
     }
 }
