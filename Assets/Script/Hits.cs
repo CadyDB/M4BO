@@ -26,9 +26,10 @@ public class Hits : MonoBehaviour
 		
 	    while (running)
 	    {
-	        Debug.Log("TestCoroutine()");
-	        yield return new WaitForSeconds(3);
-            Debug.Log("TestCoroutine() after wait");
+	        //Debug.Log("TestCoroutine()");
+	        yield return new WaitForSeconds(0.15f);
+            //Debug.Log("TestCoroutine() after wait");
+            Destroy(gameObject);
 	    }
 	}
 }

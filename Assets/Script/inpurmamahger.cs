@@ -183,16 +183,13 @@ public int comboMultiplier = 1;
     public void Perfecthit()
     {
         Instantiate(Perfect, new Vector2( 0, 0), Quaternion.identity);
-        Destroy(Perfect);
     }
     public void Misshit()
     {
         Instantiate(Miss, new Vector2( 0, 0), Quaternion.identity);
-        Destroy(Miss);
     }
     public void Badhit()
     {
         Instantiate(Bad, new Vector2( 0, 0), Quaternion.identity);
-        Destroy(Bad);
     }
 }
