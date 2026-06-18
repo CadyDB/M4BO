@@ -34,18 +34,10 @@ public class Note : MonoBehaviour
     }
     public void Poep()
     {
-<<<<<<< HEAD
-        inpurmamahger health = GetComponent<inpurmamahger>();
-        //inpurmamahger health = new inpurmamahger();
-            Debug.Log("Ik doe iets");
-            health.health -= 10;
-            Destroy(gameObject);
-=======
         GameObject gm = GameObject.Find("gamemanager");
         inpurmamahger manager = gm.GetComponent<inpurmamahger>();
         Debug.Log("Ik doe iets");
         manager.health -= 10;
         Destroy(gameObject);
->>>>>>> 8f24fc2243eb82ce1f79d6ad1ab578ffd41ed3ed
     }
 }
