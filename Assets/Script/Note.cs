@@ -28,7 +28,15 @@ public class Note : MonoBehaviour
         transform.position += Vector3.down * speed * Time.deltaTime;
         if(transform.position.y <= -6.7f)
         {
+<<<<<<< HEAD
             Poep();
+=======
+            inpurmamahger healthManager = FindObjectOfType<HealthManager>();
+            if (healthManager != null)
+            {
+                healthManager.TakeDamage(10);
+            }
+>>>>>>> cc94bed76ec807e23e711940dd22142005af03a9
         }
         
     }
