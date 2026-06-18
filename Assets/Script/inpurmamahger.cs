@@ -163,7 +163,14 @@ public int comboMultiplier = 1;
         {
             Die();
         }
-        return null;        
+        return null;
+    }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Hitbox")
+        {
+            health -= 10;
+        }
     }
     private void Die()
     {
