@@ -19,7 +19,7 @@ public class Note : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -34,10 +34,10 @@ public class Note : MonoBehaviour
     }
     public void Poep()
     {
-        inpurmamahger health = GetComponent<inpurmamahger>();
-
-            Debug.Log("Ik doe iets");
-            health.health -= 10;
-            Destroy(gameObject);
+        GameObject gm = GameObject.Find("gamemanager");
+        inpurmamahger manager = gm.GetComponent<inpurmamahger>();
+        Debug.Log("Ik doe iets");
+        manager.health -= 10;
+        Destroy(gameObject);
     }
 }
