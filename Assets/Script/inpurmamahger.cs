@@ -159,7 +159,7 @@ public int comboMultiplier = 1;
         Misshit();
         comboMultiplier = 1;
         health -= 5;
-        if (health < 0)
+        if (health <= 0)
         {
             Die();
         }
