@@ -26,5 +26,13 @@ public class Note : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.down * speed * Time.deltaTime;
+        if(transform.position.y <= 3.41f);
+        {
+            inputmamahger healthManager = FindObjectOfType<HealthManager>();
+            if (healthManager != null)
+            {
+                healthManager.TakeDamage(10);
+            }
+        }
     }
 }
