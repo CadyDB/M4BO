@@ -19,20 +19,25 @@ public class Note : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position += Vector3.down * speed * Time.deltaTime;
-        if(transform.position.y <= 3.41f);
+        if(transform.position.y <= -6.7f)
         {
-            inputmamahger healthManager = FindObjectOfType<HealthManager>();
-            if (healthManager != null)
-            {
-                healthManager.TakeDamage(10);
-            }
+            Poep();
         }
+        
+    }
+    public void Poep()
+    {
+        inpurmamahger health = GetComponent<inpurmamahger>();
+
+            Debug.Log("Ik doe iets");
+            health.health -= 10;
+            Destroy(gameObject);
     }
 }

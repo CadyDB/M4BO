@@ -1812,7 +1812,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b0218eb8cfb9b94cb044343a0481b8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::chartreader2
-  beatTime: 0.1136364
+  beatTime: 0.1071429
 --- !u!1 &1013810836
 GameObject:
   m_ObjectHideFlags: 0
