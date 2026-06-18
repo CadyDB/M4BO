@@ -45,6 +45,10 @@ public int comboMultiplier = 1;
     
     void Update()
     {
+        comboMultiplier = Mathf.Min(comboMultiplier * 2, 16);
+        scoreText.text = inpurmamahger.score.ToString();
+        healthImage.fillAmount = health / 100f;
+        health = Mathf.Clamp(health, 0, 100);
         for (int i = 0; i < lanenotes.Length; i++) 
         { 
             checkHeldNote(i);
@@ -74,10 +78,6 @@ public int comboMultiplier = 1;
             //Debug.Log("Lane 3");
             lanenotes[3] = CheckLane(3);
         }
-        scoreText.text = inpurmamahger.score.ToString();
-        healthImage.fillAmount = health / 100f;
-        health = Mathf.Clamp(health, 0, 100);
-        comboMultiplier = Mathf.Min(comboMultiplier * 2, 16);
     }
     void checkHeldNote(int lane)
     {
@@ -165,10 +165,11 @@ public int comboMultiplier = 1;
         }
         return null;
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollision(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Hitbox")
+        if (collision.gameObject.tag == "Note")
         {
+            Debug.Log("Collision with Note");
             health -= 10;
         }
     }
