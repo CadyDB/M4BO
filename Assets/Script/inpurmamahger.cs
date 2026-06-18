@@ -173,7 +173,7 @@ public int comboMultiplier = 1;
             health -= 10;
         }
     }
-    private void Die()
+    public void Die()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
     }

@@ -39,5 +39,9 @@ public class Note : MonoBehaviour
         Debug.Log("Ik doe iets");
         manager.health -= 10;
         Destroy(gameObject);
+        if (manager.health <= 0)
+        {
+            manager.Die();
+        }
     }
 }
