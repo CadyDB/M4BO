@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-public class chartreader : MonoBehaviour
+public class chartreader3 : MonoBehaviour
 {
     // public GameObject notePrefab;
     string[] chart =
