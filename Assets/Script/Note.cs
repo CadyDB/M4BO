@@ -35,7 +35,7 @@ public class Note : MonoBehaviour
     public void Poep()
     {
         inpurmamahger health = GetComponent<inpurmamahger>();
-
+        //inpurmamahger health = new inpurmamahger();
             Debug.Log("Ik doe iets");
             health.health -= 10;
             Destroy(gameObject);
