@@ -28,7 +28,7 @@ public class Note : MonoBehaviour
         transform.position += Vector3.down * speed * Time.deltaTime;
         if(transform.position.y <= 3.41f);
         {
-            inputmamahger healthManager = FindObjectOfType<HealthManager>();
+            inpurmamahger healthManager = FindObjectOfType<HealthManager>();
             if (healthManager != null)
             {
                 healthManager.TakeDamage(10);
