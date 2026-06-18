@@ -1726,8 +1726,8 @@ GameObject:
   - component: {fileID: 962095027}
   - component: {fileID: 962095026}
   - component: {fileID: 962095025}
-  - component: {fileID: 962095024}
   - component: {fileID: 962095023}
+  - component: {fileID: 962095028}
   m_Layer: 0
   m_Name: gamemanager
   m_TagString: Untagged
@@ -1748,19 +1748,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteSpawnerX
   notePrefab: {fileID: 1017959362390815936, guid: 52e5a180347edc54cb2e4ed7df93475b, type: 3}
---- !u!114 &962095024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 962095022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99d200b4b8ab6a14fab33f8db08096a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::chartreader
-  beatTime: 0.1071429
 --- !u!114 &962095025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1813,6 +1800,19 @@ Transform:
   - {fileID: 89889545}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &962095028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962095022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bab725a2180ee348866819c935510d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::chartreader3
+  beatTime: 0.1071429
 --- !u!1 &1013810836
 GameObject:
   m_ObjectHideFlags: 0
