@@ -1763,7 +1763,7 @@ MonoBehaviour:
   comboMultiplier: 1
   health: 50
   perfectRange: 0.3
-  healthImage: {fileID: 0}
+  healthImage: {fileID: 310115206}
   Perfect: {fileID: 202810368308653439, guid: 489cb65349ca5a44f90d34282e351f84, type: 3}
   Good: {fileID: 1696278532014327143, guid: 2bc5365afbe2c044b9ff3d3c8079aa87, type: 3}
   Bad: {fileID: 1544955303292321768, guid: a0a162c9ad1033e4bb854f1df4780588, type: 3}
