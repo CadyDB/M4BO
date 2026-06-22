@@ -28,11 +28,11 @@ public class Note : MonoBehaviour
         transform.position += Vector3.down * speed * Time.deltaTime;
         if(transform.position.y <= -6.7f)
         {
-            Poep();
+            HP();
         }
         
     }
-    public void Poep()
+    public void HP()
     {
         GameObject gm = GameObject.Find("gamemanager");
         inpurmamahger manager = gm.GetComponent<inpurmamahger>();
