@@ -32,7 +32,7 @@ public class chartreader2 : MonoBehaviour
         "----",
         "----",
         "----",
-        "----",
+        "--0-",
         "--0-",
 		"----",
         "----",
