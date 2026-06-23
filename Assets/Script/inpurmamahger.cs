@@ -41,6 +41,10 @@ public int comboMultiplier = 1;
 
         //stop met luisteren naar action event onBumperHit als scene herstart of game stopt             
     }
+    void Awake()
+    {
+        score = 0;
+    }
 
     
     void Update()
