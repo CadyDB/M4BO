@@ -26,6 +26,9 @@ public int comboMultiplier = 1;
     public GameObject Good;
     public GameObject Bad;
     public GameObject Miss;
+    public static int perfect = 0;
+    public static int miss = 0;
+    public static int bad = 0;
     
     public  TextMeshProUGUI scoreText;
     private Note[] lanenotes = new Note[4];
@@ -33,13 +36,15 @@ public int comboMultiplier = 1;
     void Start()
     {
         scoreText = GameObject.FindWithTag("Score").GetComponent<TextMeshProUGUI>();
-
-        
     }
     private void OnDisable()
     {
 
         //stop met luisteren naar action event onBumperHit als scene herstart of game stopt             
+    }
+    void Awake()
+    {
+        score = 0;
     }
 
     
@@ -141,6 +146,7 @@ public int comboMultiplier = 1;
                 Debug.Log("HIT PERFECT");
                 comboMultiplier *= 2;
                 health += 5;
+                perfect += 1;
                 Perfecthit();
                 score += 30 * comboMultiplier;
                 Destroy(closestNote);
@@ -150,6 +156,7 @@ public int comboMultiplier = 1;
             {
                 Debug.Log("HIT EARLY");
                 Badhit();
+                bad += 1;
                 score += 15 * comboMultiplier;
                 Destroy(closestNote);
                 return closestNote.GetComponent<Note>();
@@ -159,6 +166,7 @@ public int comboMultiplier = 1;
         Misshit();
         comboMultiplier = 1;
         health -= 5;
+        miss += 1;
         if (health <= 0)
         {
             Die();
