@@ -6,7 +6,7 @@ public class endscreenforsongs : MonoBehaviour
     public bool useInvoke;
 	public bool running;
     public GameObject container;
-    public static int time;
+    public int time;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
