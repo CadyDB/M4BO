@@ -45,6 +45,8 @@ public int comboMultiplier = 1;
     void Awake()
     {
         score = 0;
+        Time.timeScale = 1;
+        AudioListener.pause = false;
     }
 
     

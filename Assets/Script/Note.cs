@@ -26,7 +26,7 @@ public class Note : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.down * speed * Time.deltaTime;
-        if(transform.position.y <= -6.7f)
+        if(transform.position.y <= -6.9f)
         {
             HP();
         }
