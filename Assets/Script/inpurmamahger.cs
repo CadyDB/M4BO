@@ -167,7 +167,7 @@ public int comboMultiplier = 1;
         Debug.Log("HIT MISS");
         Misshit();
         comboMultiplier = 1;
-        //health -= 5;
+        health -= 5;
         miss += 1;
         if (health <= 0)
         {

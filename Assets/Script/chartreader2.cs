@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 public class chartreader2 : MonoBehaviour
 {
+
     // public GameObject notePrefab;
     string[] chart =
     {
