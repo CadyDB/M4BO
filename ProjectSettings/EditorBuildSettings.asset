@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/HomeScene.unity
+    path: Assets/Scenes/Menustuffs/HomeScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Stuff for Test Scene/GameOver.unity
@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3.unity
     guid: e930f8b22b2de0d4e9e235c8ceaed33b
   - enabled: 1
-    path: Assets/Scenes/LevelMenu.unity
+    path: Assets/Scenes/Menustuffs/LevelMenu.unity
     guid: c7de946facf2a7045a03fe22626938dd
   - enabled: 1
     path: Assets/Scenes/ComicBook1.unity
