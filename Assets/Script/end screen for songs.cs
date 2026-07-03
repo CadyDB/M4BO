@@ -34,7 +34,7 @@ public class endscreenforsongs : MonoBehaviour
     public void EndGame()
     {
         container.SetActive(true);
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
         AudioListener.pause = true;
     }
 
