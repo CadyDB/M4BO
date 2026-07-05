@@ -13,9 +13,9 @@ using System.Reflection;
 public class inpurmamahger : MonoBehaviour
 {
     private List<string> bumperTags = new List<string>();   //lijst met geraakte tags
-public int comboMultiplier = 1;
+    public int comboMultiplier = 1;
     public static Action<int, int> OnScoreChange { get; internal set; }
-    public static event Action<string, int> onBumperHit;
+    //public static event Action<string, int> onBumperHit;
     float hitLineY = -3.72f;//link met scene line
     public int health = Mathf.Clamp(100, 0, 100);
     public static int score = 0;
@@ -35,6 +35,8 @@ public int comboMultiplier = 1;
     public TextMeshProUGUI prefectText;
     public TextMeshProUGUI missText;
     public TextMeshProUGUI badText;
+    public TextMeshProUGUI Multiplyer;
+    
     private Note[] lanenotes = new Note[4];
    
     void Start()
@@ -44,6 +46,7 @@ public int comboMultiplier = 1;
         prefectText = GameObject.FindWithTag("Perfect").GetComponent<TextMeshProUGUI>();
         missText = GameObject.FindWithTag("Miss").GetComponent<TextMeshProUGUI>();
         badText = GameObject.FindWithTag("Bad").GetComponent<TextMeshProUGUI>();
+        Multiplyer = GameObject.FindWithTag("Multi").GetComponent<TextMeshProUGUI>();
     }
     private void OnDisable()
     {
@@ -66,6 +69,7 @@ public int comboMultiplier = 1;
         prefectText.text = inpurmamahger.perfect.ToString();
         missText.text = inpurmamahger.miss.ToString();
         badText.text = inpurmamahger.bad.ToString();
+        //Multiplyer.text = inpurmamahger.comboMultiplier.ToString();
         healthImage.fillAmount = health / 100f;
         health = Mathf.Clamp(health, 0, 100);
         for (int i = 0; i < lanenotes.Length; i++) 

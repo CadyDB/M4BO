@@ -10,6 +10,10 @@ TagManager:
   - Score
   - Hitbox
   - ScoreDone
+  - Perfect
+  - Miss
+  - Bad
+  - Multi
   layers:
   - Default
   - TransparentFX
