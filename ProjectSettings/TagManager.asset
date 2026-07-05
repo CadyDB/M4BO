@@ -9,6 +9,7 @@ TagManager:
   - Note2
   - Score
   - Hitbox
+  - ScoreDone
   layers:
   - Default
   - TransparentFX

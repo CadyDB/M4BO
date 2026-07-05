@@ -8,6 +8,10 @@ public class endscreenforsongs : MonoBehaviour
     public GameObject container;
     public int time;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Awake()
+    {
+        container.transform.SetAsFirstSibling();
+    }
     void Start()
     {
          if (useInvoke)
@@ -33,9 +37,10 @@ public class endscreenforsongs : MonoBehaviour
 	}
     public void EndGame()
     {
-        container.SetActive(true);
+        //container.SetActive(true);
         //Time.timeScale = 0;
         AudioListener.pause = true;
+        container.transform.SetAsLastSibling();
     }
 
     // Update is called once per frame

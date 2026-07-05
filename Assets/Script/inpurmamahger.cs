@@ -31,11 +31,19 @@ public int comboMultiplier = 1;
     public static int bad = 0;
     
     public  TextMeshProUGUI scoreText;
+    public  TextMeshProUGUI scoreTextDone;
+    public TextMeshProUGUI prefectText;
+    public TextMeshProUGUI missText;
+    public TextMeshProUGUI badText;
     private Note[] lanenotes = new Note[4];
    
     void Start()
     {
         scoreText = GameObject.FindWithTag("Score").GetComponent<TextMeshProUGUI>();
+        scoreTextDone = GameObject.FindWithTag("ScoreDone").GetComponent<TextMeshProUGUI>();
+        prefectText = GameObject.FindWithTag("Perfect").GetComponent<TextMeshProUGUI>();
+        missText = GameObject.FindWithTag("Miss").GetComponent<TextMeshProUGUI>();
+        badText = GameObject.FindWithTag("Bad").GetComponent<TextMeshProUGUI>();
     }
     private void OnDisable()
     {
@@ -54,6 +62,10 @@ public int comboMultiplier = 1;
     {
         comboMultiplier = Mathf.Min(comboMultiplier * 2, 16);
         scoreText.text = inpurmamahger.score.ToString();
+        scoreTextDone.text = inpurmamahger.score.ToString();
+        prefectText.text = inpurmamahger.perfect.ToString();
+        missText.text = inpurmamahger.miss.ToString();
+        badText.text = inpurmamahger.bad.ToString();
         healthImage.fillAmount = health / 100f;
         health = Mathf.Clamp(health, 0, 100);
         for (int i = 0; i < lanenotes.Length; i++) 
@@ -97,13 +109,10 @@ public int comboMultiplier = 1;
                 Input.GetKey(KeyCode.K) && lane == 3)
             {
                 Debug.Log("Holding note in lane " + lane);
-                // Hier kun je extra logica toevoegen voor het vasthouden van de note,
-                // zoals het verhogen van de score of het verlengen van de health boost.
             }
             else
             {
-                // Debug.Log("Released hold note in lane " + lane);
-                lanenotes[lane] = null; // Reset de hold note als deze niet meer wordt vastgehouden
+                lanenotes[lane] = null;
             }
         }
     }
@@ -167,7 +176,6 @@ public int comboMultiplier = 1;
         Debug.Log("HIT MISS");
         Misshit();
         comboMultiplier = 1;
-        health -= 5;
         miss += 1;
         if (health <= 0)
         {
