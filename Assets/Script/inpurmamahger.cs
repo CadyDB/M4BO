@@ -63,7 +63,7 @@ public class inpurmamahger : MonoBehaviour
     
     void Update()
     {
-        comboMultiplier = Mathf.Min(comboMultiplier * 2, 16);
+        comboMultiplier = Mathf.Min(comboMultiplier * 1, 16);
         scoreText.text = inpurmamahger.score.ToString();
         scoreTextDone.text = inpurmamahger.score.ToString();
         prefectText.text = inpurmamahger.perfect.ToString();
