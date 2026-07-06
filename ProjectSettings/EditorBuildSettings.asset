@@ -41,6 +41,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: de095108d0c9c1d40813fa573847d159
+  - enabled: 1
+    path: Assets/Scenes/Menustuffs/HowtoPlay.unity
+    guid: d3722d9bd6c804049b21a1668c6d78ba
+  - enabled: 1
+    path: Assets/Scenes/Menustuffs/Lore.unity
+    guid: 58a2cfb95fa8f974d8673be3143cb934
+  - enabled: 1
+    path: Assets/Scenes/Menustuffs/Selectie.unity
+    guid: 316364a2b2c41d3429f29d4084d2bc28
+  - enabled: 1
+    path: Assets/Scenes/Menustuffs/StoryMenu.unity
+    guid: 5ebca2e8fb171b64cac8711a299ea823
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

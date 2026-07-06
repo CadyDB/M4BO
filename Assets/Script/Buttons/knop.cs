@@ -33,4 +33,9 @@ public class knop : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene("Credits");
         Time.timeScale = 1;
     }
+    public void realselect()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Selectie");
+        Time.timeScale = 1;
+    }
 }

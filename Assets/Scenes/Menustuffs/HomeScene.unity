@@ -475,9 +475,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1476464039}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: StartGame
+      - m_Target: {fileID: 1476464040}
+        m_TargetAssemblyTypeName: knop, Assembly-CSharp
+        m_MethodName: realselect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -791,6 +791,7 @@ GameObject:
   - component: {fileID: 1476464036}
   - component: {fileID: 1476464035}
   - component: {fileID: 1476464039}
+  - component: {fileID: 1476464040}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -893,6 +894,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe09145d607cc74eb275a3ffe1e1476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
+--- !u!114 &1476464040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476464034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69605288064bd9f439e37d6903a7289a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::knop
 --- !u!1 &1637716374
 GameObject:
   m_ObjectHideFlags: 0
