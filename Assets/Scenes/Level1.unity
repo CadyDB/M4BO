@@ -4099,7 +4099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::endscreenforsongs
   useInvoke: 0
   running: 1
-  container: {fileID: 5587088770581956697}
+  container: {fileID: 8147686184549103921}
   time: 5
 --- !u!224 &4247960973123308233
 RectTransform:
