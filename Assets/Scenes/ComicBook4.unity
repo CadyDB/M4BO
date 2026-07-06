@@ -555,9 +555,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1427568347}
-        m_TargetAssemblyTypeName: Comic3Buttons, Assembly-CSharp
-        m_MethodName: LoadCurrentScene
+      - m_Target: {fileID: 1427568348}
+        m_TargetAssemblyTypeName: knop, Assembly-CSharp
+        m_MethodName: Credits
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -993,6 +993,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1427568346}
   - component: {fileID: 1427568347}
+  - component: {fileID: 1427568348}
   m_Layer: 0
   m_Name: Button Manager
   m_TagString: Untagged
@@ -1027,6 +1028,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e056d5ef535b1524dbfb7ee55f626c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Comic3Buttons
+--- !u!114 &1427568348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427568344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69605288064bd9f439e37d6903a7289a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::knop
 --- !u!1 &1455068269
 GameObject:
   m_ObjectHideFlags: 0

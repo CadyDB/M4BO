@@ -35,6 +35,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ComicBook3.unity
     guid: 504236854a282af4aafbaa5374206c0e
+  - enabled: 1
+    path: Assets/Scenes/ComicBook4.unity
+    guid: 84df1f65e7d107c45a7ce62de4236179
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: de095108d0c9c1d40813fa573847d159
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
