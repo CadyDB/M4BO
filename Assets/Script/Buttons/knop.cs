@@ -25,7 +25,17 @@ public class knop : MonoBehaviour
     }
     public void Back()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("HomeScene");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Selectie");
+        Time.timeScale = 1;
+    }
+    public void Credits()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Credits");
+        Time.timeScale = 1;
+    }
+    public void realselect()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Selectie");
         Time.timeScale = 1;
     }
 }

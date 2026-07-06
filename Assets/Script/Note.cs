@@ -26,5 +26,22 @@ public class Note : MonoBehaviour
     void Update()
     {
         transform.position += Vector3.down * speed * Time.deltaTime;
+        if(transform.position.y <= -6.9f)
+        {
+            HP();
+        }
+        
+    }
+    public void HP()
+    {
+        GameObject gm = GameObject.Find("gamemanager");
+        inpurmamahger manager = gm.GetComponent<inpurmamahger>();
+        Debug.Log("Ik doe iets");
+        manager.health -= 10;
+        Destroy(gameObject);
+        if (manager.health <= 0)
+        {
+            manager.Die();
+        }
     }
 }

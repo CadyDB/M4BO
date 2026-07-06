@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/HomeScene.unity
+    path: Assets/Scenes/Menustuffs/HomeScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Stuff for Test Scene/GameOver.unity
@@ -24,11 +24,35 @@ EditorBuildSettings:
     path: Assets/Scenes/Level3.unity
     guid: e930f8b22b2de0d4e9e235c8ceaed33b
   - enabled: 1
-    path: Assets/Scenes/LevelMenu.unity
+    path: Assets/Scenes/Menustuffs/LevelMenu.unity
     guid: c7de946facf2a7045a03fe22626938dd
   - enabled: 1
     path: Assets/Scenes/ComicBook1.unity
     guid: f1f4ea5ccf02d254fbbc8504971a0094
+  - enabled: 1
+    path: Assets/Scenes/ComicBook2.unity
+    guid: dc9ffaa764edd4d4896aeb9e4d6e02d2
+  - enabled: 1
+    path: Assets/Scenes/ComicBook3.unity
+    guid: 504236854a282af4aafbaa5374206c0e
+  - enabled: 1
+    path: Assets/Scenes/ComicBook4.unity
+    guid: 84df1f65e7d107c45a7ce62de4236179
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: de095108d0c9c1d40813fa573847d159
+  - enabled: 1
+    path: Assets/Scenes/Menustuffs/HowtoPlay.unity
+    guid: d3722d9bd6c804049b21a1668c6d78ba
+  - enabled: 1
+    path: Assets/Scenes/Menustuffs/Lore.unity
+    guid: 58a2cfb95fa8f974d8673be3143cb934
+  - enabled: 1
+    path: Assets/Scenes/Menustuffs/Selectie.unity
+    guid: 316364a2b2c41d3429f29d4084d2bc28
+  - enabled: 1
+    path: Assets/Scenes/Menustuffs/StoryMenu.unity
+    guid: 5ebca2e8fb171b64cac8711a299ea823
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

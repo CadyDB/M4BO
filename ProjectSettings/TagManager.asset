@@ -8,6 +8,12 @@ TagManager:
   - Note
   - Note2
   - Score
+  - Hitbox
+  - ScoreDone
+  - Perfect
+  - Miss
+  - Bad
+  - Multi
   layers:
   - Default
   - TransparentFX
@@ -42,9 +48,6 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: alles dat NIET de achtergrond is
-    uniqueID: 4017689349
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -56,6 +59,9 @@ TagManager:
     locked: 0
   - name: gradient
     uniqueID: 2098486437
+    locked: 0
+  - name: alles dat NIET de achtergrond is
+    uniqueID: 4017689349
     locked: 0
   m_RenderingLayers:
   - Default

@@ -8,38 +8,73 @@ using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
+using System.Reflection;
 
 public class inpurmamahger : MonoBehaviour
 {
     private List<string> bumperTags = new List<string>();   //lijst met geraakte tags
-public int comboMultiplier = 1;
+    public int comboMultiplier = 1;
     public static Action<int, int> OnScoreChange { get; internal set; }
-    public static event Action<string, int> onBumperHit;
+    //public static event Action<string, int> onBumperHit;
     float hitLineY = -3.72f;//link met scene line
     public int health = Mathf.Clamp(100, 0, 100);
     public static int score = 0;
     public float perfectRange = 0.3f;
     public static inpurmamahger Instance;
     public Image healthImage;
+    public GameObject Perfect;
+    public GameObject Good;
+    public GameObject Bad;
+    public GameObject Miss;
+    public static int perfect = 0;
+    public static int miss = 0;
+    public static int bad = 0;
     
     public  TextMeshProUGUI scoreText;
+    public  TextMeshProUGUI scoreTextDone;
+    public TextMeshProUGUI prefectText;
+    public TextMeshProUGUI missText;
+    public TextMeshProUGUI badText;
+    public TextMeshProUGUI Multiplyer;
+    
     private Note[] lanenotes = new Note[4];
    
     void Start()
     {
         scoreText = GameObject.FindWithTag("Score").GetComponent<TextMeshProUGUI>();
-
-        
+        scoreTextDone = GameObject.FindWithTag("ScoreDone").GetComponent<TextMeshProUGUI>();
+        prefectText = GameObject.FindWithTag("Perfect").GetComponent<TextMeshProUGUI>();
+        missText = GameObject.FindWithTag("Miss").GetComponent<TextMeshProUGUI>();
+        badText = GameObject.FindWithTag("Bad").GetComponent<TextMeshProUGUI>();
+        Multiplyer = GameObject.FindWithTag("Multi").GetComponent<TextMeshProUGUI>();
     }
     private void OnDisable()
     {
 
         //stop met luisteren naar action event onBumperHit als scene herstart of game stopt             
     }
+    void Awake()
+    {
+        score = 0;
+        perfect = 0;
+        miss = 0;
+        bad = 0;
+        Time.timeScale = 1;
+        AudioListener.pause = false;
+    }
 
     
     void Update()
     {
+        comboMultiplier = Mathf.Min(comboMultiplier * 1, 16);
+        scoreText.text = inpurmamahger.score.ToString();
+        scoreTextDone.text = inpurmamahger.score.ToString();
+        prefectText.text = inpurmamahger.perfect.ToString();
+        missText.text = inpurmamahger.miss.ToString();
+        badText.text = inpurmamahger.bad.ToString();
+        //Multiplyer.text = inpurmamahger.comboMultiplier.ToString();
+        healthImage.fillAmount = health / 100f;
+        health = Mathf.Clamp(health, 0, 100);
         for (int i = 0; i < lanenotes.Length; i++) 
         { 
             checkHeldNote(i);
@@ -69,10 +104,6 @@ public int comboMultiplier = 1;
             //Debug.Log("Lane 3");
             lanenotes[3] = CheckLane(3);
         }
-        scoreText.text = inpurmamahger.score.ToString();
-        healthImage.fillAmount = health / 100f;
-        health = Mathf.Clamp(health, 0, 100);
-        comboMultiplier = Mathf.Min(comboMultiplier * 2, 16);
     }
     void checkHeldNote(int lane)
     {
@@ -85,13 +116,10 @@ public int comboMultiplier = 1;
                 Input.GetKey(KeyCode.K) && lane == 3)
             {
                 Debug.Log("Holding note in lane " + lane);
-                // Hier kun je extra logica toevoegen voor het vasthouden van de note,
-                // zoals het verhogen van de score of het verlengen van de health boost.
             }
             else
             {
-                // Debug.Log("Released hold note in lane " + lane);
-                lanenotes[lane] = null; // Reset de hold note als deze niet meer wordt vastgehouden
+                lanenotes[lane] = null;
             }
         }
     }
@@ -136,6 +164,8 @@ public int comboMultiplier = 1;
                 Debug.Log("HIT PERFECT");
                 comboMultiplier *= 2;
                 health += 5;
+                perfect += 1;
+                Perfecthit();
                 score += 30 * comboMultiplier;
                 Destroy(closestNote);
                 return closestNote.GetComponent<Note>();
@@ -143,21 +173,32 @@ public int comboMultiplier = 1;
             if (yPos >= -3.5f && yPos <= -2f)
             {
                 Debug.Log("HIT EARLY");
+                Badhit();
+                bad += 1;
                 score += 15 * comboMultiplier;
                 Destroy(closestNote);
                 return closestNote.GetComponent<Note>();
             }
         }
         Debug.Log("HIT MISS");
+        Misshit();
         comboMultiplier = 1;
-        health -= 5;
-        if (health < 0)
+        miss += 1;
+        if (health <= 0)
         {
             Die();
         }
-        return null;        
+        return null;
     }
-    private void Die()
+    void OnCollision(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Note")
+        {
+            Debug.Log("Collision with Note");
+            health -= 10;
+        }
+    }
+    public void Die()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
     }
@@ -169,7 +210,18 @@ public int comboMultiplier = 1;
     public void AddScore(int amount)
     {
         score = score + amount;
-        // debug voor testen
-       Debug.Log("Score: " + score);
+        Debug.Log("Score: " + score);
+    }
+    public void Perfecthit()
+    {
+        Instantiate(Perfect, new Vector2( 0, 0), Quaternion.identity);
+    }
+    public void Misshit()
+    {
+        Instantiate(Miss, new Vector2( 0, 0), Quaternion.identity);
+    }
+    public void Badhit()
+    {
+        Instantiate(Bad, new Vector2( 0, 0), Quaternion.identity);
     }
 }
