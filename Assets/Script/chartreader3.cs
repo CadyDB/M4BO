@@ -42,6 +42,8 @@ public class chartreader3 : MonoBehaviour
         "----",
         "----",
         "----",
+        "----",
+        "----",
         "0---",
         "----",
         "-0--",
