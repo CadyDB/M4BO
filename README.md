@@ -50,3 +50,14 @@ its just to showcase what we have for now. very rough and not polished at all so
 enjoy :)
 
 -------------------------------------------------------------------
+
+# 06:28 06-07-2026
+
+its over... its done! yea so i am NOT doing this again... worst job ever bro...
+i won't tell why cause that might negativly the atmosphere in the class so... it will remain a secret until i crack open like a egg and spill the beans
+
+ok it is time to shower and sleep for 2 hours and then get ready again for the markt!
+
+(read me with instructions will be uploaded soon)
+
+-------------------------------------------------------------------
