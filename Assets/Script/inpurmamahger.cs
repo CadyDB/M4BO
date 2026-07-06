@@ -56,6 +56,9 @@ public class inpurmamahger : MonoBehaviour
     void Awake()
     {
         score = 0;
+        perfect = 0;
+        miss = 0;
+        bad = 0;
         Time.timeScale = 1;
         AudioListener.pause = false;
     }
